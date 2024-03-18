@@ -9,6 +9,11 @@ public class Demo {
 		System.out.println("some chages after cloning the code ");
 		System.out.println("new code");
 		
+		//some small changes 
+		System.out.println("code 1");
+		System.out.println("code 2");
+		System.out.println("code 3");
+		
 
 	}
 
