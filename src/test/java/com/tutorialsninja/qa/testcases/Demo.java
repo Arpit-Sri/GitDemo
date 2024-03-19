@@ -40,6 +40,12 @@ public class Demo {
 		System.out.println("welcome to the new branch");
 	
 		System.out.println("develop a new iphone");
+		
+		//new changes after making developQA
+		System.out.println("qa1");
+		System.out.println("qa2");
+		System.out.println("qa3");
+
 
 	
 		
