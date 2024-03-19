@@ -33,7 +33,11 @@ public class PurchasingTicket {
 		driver.findElement(By.xpath("//input[@value='Find Flights']")).click();
 		
 		driver.findElement(By.xpath("//input[@class='btn btn-small']")).click();
+		
+		System.out.println("hello guys");
 
 	}
+	
+	
 
 }
