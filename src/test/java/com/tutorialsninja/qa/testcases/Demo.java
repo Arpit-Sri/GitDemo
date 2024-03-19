@@ -24,6 +24,12 @@ public class Demo {
 		//4the time changes by American 
 		System.out.println("code 6");
 		System.out.println("code 7");
+
+		//5th time changes Indian
+
+		System.out.println("code 8");
+		System.out.println("code 9");
+
 	
 		
 
