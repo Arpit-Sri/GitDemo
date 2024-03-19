@@ -47,7 +47,7 @@ public class Login {
 		 driver.get("https://tutorialsninja.com/demo/");
 		 driver.findElement(By.xpath("//span[text()='My Account']")).click();
 		 driver.findElement(By.linkText("Login")).click();
-		 driver.findElement(By.id("input-email")).sendKeys("wdhwidhiwh"+generateTimeStamp()+"@gmail.com");
+		 //driver.findElement(By.id("input-email")).sendKeys("wdhwidhiwh"+generateTimeStamp()+"@gmail.com");
 		 driver.findElement(By.id("input-password")).sendKeys("1234547");
 		 
 		 driver.findElement(By.xpath("//input[@value='Login']")).click();
@@ -95,7 +95,7 @@ public class Login {
 		 driver.get("https://tutorialsninja.com/demo/");
 		 driver.findElement(By.xpath("//span[text()='My Account']")).click();
 		 driver.findElement(By.linkText("Login")).click();
-		 driver.findElement(By.id("input-email")).sendKeys("theundefined0445"+generateTimeStamp()+"@gmail.com");
+		
 		 driver.findElement(By.id("input-password")).sendKeys("12345");
 		 
 		 driver.findElement(By.xpath("//input[@value='Login']")).click();
@@ -132,9 +132,60 @@ public class Login {
 	
 	//to overcome the issue of having a no. of logIn exceeded we use Time stamp method in below
 
-		public String generateTimeStamp(){
+
 			
-			Date date = new Date();
-			return date.toString().replace(" ", "_").replace(":", "_");
+			public void verifyLoginWithValidCredentials1() {
+				
+				 WebDriver driver = new ChromeDriver();
+				 driver.manage().window().maximize();
+				 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+				 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+				 
+				 driver.get("https://tutorialsninja.com/demo/");
+				 driver.findElement(By.xpath("//span[text()='My Account']")).click();
+				 driver.findElement(By.linkText("Login")).click();
+				 driver.findElement(By.id("input-email")).sendKeys("theundefined04@gmail.com");
+				 driver.findElement(By.id("input-password")).sendKeys("12345");
+				 driver.findElement(By.xpath("//input[@value='Login']")).click();
+				 
+				 Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+				 
+			}
+				 
+				 public void verifyLoginWithValidCredential2() {
+						
+					 WebDriver driver = new ChromeDriver();
+					 driver.manage().window().maximize();
+					 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+					 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+					 
+					 driver.get("https://tutorialsninja.com/demo/");
+					 driver.findElement(By.xpath("//span[text()='My Account']")).click();
+					 driver.findElement(By.linkText("Login")).click();
+					 driver.findElement(By.id("input-email")).sendKeys("theundefined04@gmail.com");
+					 driver.findElement(By.id("input-password")).sendKeys("12345");
+					 driver.findElement(By.xpath("//input[@value='Login']")).click();
+					 
+					 Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+					 
+				 }
+					 
+					 public void verifyLoginWithValidCredentials3() {
+							
+						 WebDriver driver = new ChromeDriver();
+						 driver.manage().window().maximize();
+						 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+						 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+						 
+						 driver.get("https://tutorialsninja.com/demo/");
+						 driver.findElement(By.xpath("//span[text()='My Account']")).click();
+						 driver.findElement(By.linkText("Login")).click();
+						 driver.findElement(By.id("input-email")).sendKeys("theundefined04@gmail.com");
+						 driver.findElement(By.id("input-password")).sendKeys("12345");
+						 driver.findElement(By.xpath("//input[@value='Login']")).click();
+						 
+						 Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
+						 
+						 driver.quit();
 		}
 }
