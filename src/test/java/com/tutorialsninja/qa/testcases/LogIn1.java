@@ -22,6 +22,9 @@ public class LogIn1 {
 		
 		driver.findElement(By.id("pass")).sendKeys("123456");
 		driver.findElement(By.name("login")).click();
+
+		//new changes 
+		System.out.println("welcome to the future");
 		
 		
 		

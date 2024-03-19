@@ -25,10 +25,14 @@ public class Demo {
 		System.out.println("code 6");
 		System.out.println("code 7");
 
-		//5th time changes Indian
+		//5th time changes by Indian
 
 		System.out.println("code 8");
 		System.out.println("code 9");
+
+		//6th time changes by American
+		System.out.println("code 10");
+		System.out.println("code 11");
 
 	
 		
