@@ -45,6 +45,11 @@ public class Demo {
 		System.out.println("qa1");
 		System.out.println("qa2");
 		System.out.println("qa3");
+		
+		//21-03-24
+		System.out.println("code for module 1");
+		System.out.println("code for module 2");
+		System.out.println("code for module 3");
 
 
 	
